@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --primary-color: black;
+  --primary-dark-color: gray;
+  --secondary-color: white;
+  --secondary-dark-color: gray;
+}
+
+:root {
+  --swiper-navigation-size: 15px;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  z-index: 10;
+  background-color: black;
+}
+
+header .header-aside {
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-aside img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+header .header-aside i {
+  margin: 0 10px;
+}
+
+header .header-aside .fa-bell {
+  font-size: 20px;
+}
+
+.fa-search {
+  background-color: var(--primary-dark-color);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+
+  padding: 10px;
+  z-index: 10;
+  bottom: 0px;
+}
+
+nav .mobile-nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+nav .nav-icon {
+  border-radius: 10px;
+  background: rgb(49, 49, 49);
+  color: white;
+  padding: 10px;
+}
+
+nav .nav-icon.active {
+  background: #12f97f;
+}
+
+nav .nav-icon img {
+  width: 15px;
+}
+
+nav .red-btn {
+  background-color: rgb(228, 26, 26);
+}
+
+main {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  padding: 0 10px;
+}
+.swiper {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-size: cover;
+  height: 300px;
+  padding: 20px;
+}
+
+/* .swiper-slide div {
+  background-color: gray;
+  color: red;
+} */
+
+.slide1 {
+  background-image: url("../images/wallpaperflare\ 1.png");
+}
+.slide2 {
+  background-image: url("../images/wallpaperflare\ 1.png");
+}
+.slide3 {
+  background-image: url("../images/wallpaperflare\ 1.png");
+}
+
+.green-btn {
+  border-radius: 6px;
+  background: #12f97f;
+  color: white;
+  padding: 10px;
+  border: 0;
+}
+
+.gray-btn {
+  padding: 10px;
+  border-radius: 7px;
+  color: rgba(128, 128, 128, 0.5);
+  border: 0;
+  margin-left: 10px;
+}
+
+
+
+.logo2,
+.logo3 {
+  display: none;
+}
+
+.categories {
+  margin: 30px 0;
+}
+
+.category-cards {
+  margin-top: 20px;
+}
+
+.category-card {
+  background: linear-gradient(to top, #1b1b1b, #535353);
+  padding: 20px;
+  border-radius: 10px;
+
+  .category-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .category-card-header img {
+    width: 60px;
+  }
+
+  .green-btn {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+.categories {
+  .swiper-slide {
+    height: auto;
+  }
+  .category-card{
+    width: 100%;
+  }
+
+  .swiper-buttons {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #e7e5e5;
+  }
+
+  .swiper-button-next {
+    left: 50px;
+  }
+
+  .swiper-slide div {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+/* responsive style */
+
+@media only screen and (min-width: 700px) {
+  .logo1 {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .logo3 {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+
+    padding: 1.5%;
+
+    top: 20px;
+
+    width: 7%;
+    background-color: rgb(31, 30, 30);
+    margin-left: 20px;
+    height: 95vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  nav .mobile-nav {
+    display: block;
+  }
+
+  nav .nav-icon {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgb(19, 18, 18);
+  }
+
+  nav .nav-icon img {
+    width: 20px;
+  }
+
+  main {
+    position: absolute;
+    top: 70px;
+    width: 90%;
+    padding: 0 10px;
+    left: 10%;
+  }
+  .swiper-slide {
+    height: 400px;
+  }
+}
