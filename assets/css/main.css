@@ -210,6 +210,21 @@ main {
   }
 }
 
+.trending{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+
+  .trending-card{
+    border-radius: 10px;
+  }
+  .trending-card img{
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
 /* responsive style */
 
 @media only screen and (min-width: 700px) {
@@ -269,5 +284,20 @@ main {
   }
   .swiper-slide {
     height: 400px;
+  }
+
+  .trending{
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .trending{
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 2%;
+
   }
 }

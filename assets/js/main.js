@@ -23,11 +23,11 @@ var swiper = new Swiper(".mySwiper", {
         slidesPerView: 2, // Display 2 slides at a time
       },
       768: {
-        slidesPerView: 4, // Display 2 slides at a time
+        slidesPerView: 3, // Display 2 slides at a time
       },
       // When the window width is >= 992px
       992: {
-        slidesPerView: 5, // Display 3 slides at a time
+        slidesPerView: 4, // Display 3 slides at a time
       },
       // Add more breakpoints as needed
     },
