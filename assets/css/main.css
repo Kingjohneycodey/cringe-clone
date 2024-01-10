@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Poppins;
-
 }
 
 :root {
@@ -81,7 +80,8 @@ nav .nav-icon {
   padding: 10px;
 }
 
-nav .nav-icon.active {
+nav .nav-icon.active,
+nav .nav-icon:hover {
   background: #12f97f;
 }
 
@@ -162,51 +162,49 @@ main {
   background: linear-gradient(to top, #1b1b1b, #535353);
   padding: 20px;
   border-radius: 10px;
-
-  .category-card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .category-card-header img {
-    width: 60px;
-  }
-
-  .green-btn {
-    width: 100%;
-    color: black;
-    font-weight: bold;
-  }
 }
 
-.categories {
-  .swiper-slide {
-    height: auto;
-  }
-  .category-card {
-    width: 100%;
-  }
+.category-card .category-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .swiper-buttons {
-    position: absolute;
-    top: 20px;
-    right: 100px;
-  }
+.category-card .category-card-header img {
+  width: 60px;
+}
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: #e7e5e5;
-  }
+.category-card .green-btn {
+  width: 100%;
+  color: black;
+  font-weight: bold;
+}
 
-  .swiper-button-next {
-    left: 50px;
-  }
+.categories .swiper-slide {
+  height: auto;
+}
+.categories .category-card {
+  width: 100%;
+}
 
-  .swiper-slide div {
-    background-color: transparent;
-    color: white;
-  }
+.categories .swiper-buttons {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+
+.categories .swiper-button-prev,
+.categories .swiper-button-next {
+  color: #e7e5e5;
+}
+
+.categories .swiper-button-next {
+  left: 50px;
+}
+
+.categories .swiper-slide div {
+  background-color: transparent;
+  color: white;
 }
 
 .trending {
@@ -214,14 +212,15 @@ main {
   display: grid;
   grid-template-columns: 49% 49%;
   gap: 2%;
+}
 
-  .trending-card {
-    border-radius: 10px;
-  }
-  .trending-card img {
-    width: 100%;
-    border-radius: 10px;
-  }
+.trending .trending-card {
+  border-radius: 10px;
+}
+
+.trending .trending-card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .main-header {
@@ -235,88 +234,79 @@ main {
   margin-right: 20px;
 }
 
-.favourite-section{
+.favourite-section {
   display: grid;
   grid-template-columns: 49% 49%;
   gap: 2%;
-
 }
 
-.watchlist{
-
-
-  .ellipsis{
-    width: 100%;
-    text-align: right;
-  }
-
-  img{
-    max-height: 300px;
-  }
-  
+.watchlist img {
+  max-height: 300px;
 }
 
+.watchlist .ellipsis {
+  width: 100%;
+  text-align: right;
+}
 
 .favourite-card {
   background-color: rgb(37, 37, 37);
   padding: 10px;
   border-radius: 10px;
-
-  img{
-    width: 100%;
-    border-radius: 10px;
-    width: 100%;
-  }
-
-  .favourite-card-img{
-    position: relative;
-  }
-
-  .tag{
-    position: absolute;
-    display: block;
-    top: 10px;
- 
-    margin-left: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-  }
-
-  .favourite-card-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-
-    .icon{
-      padding: 5px 10px;
-      background-color: rgb(87, 86, 86);
-      border-radius: 10px;
-    }
-
-    .icon:hover i, .icon.active i{
-      color: red;
-    }
-
-
-  }
-
-  
-  .fa-ellipsis-v{
-    padding: 15px 20px;
-    border-radius: 10px;
- 
-    border: 1px solid rgb(65, 63, 63);
-  }
 }
 
-.categories-btn .green-btn{
+.favourite-card img {
+  width: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.favourite-card .favourite-card-img {
+  position: relative;
+}
+
+.favourite-card .tag {
+  position: absolute;
+  display: block;
+  top: 10px;
+
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.favourite-card .favourite-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.favourite-card .favourite-card-content .icon {
+  padding: 5px 10px;
+  background-color: rgb(87, 86, 86);
+  border-radius: 10px;
+}
+
+.favourite-card .favourite-card-content .icon:hover i,
+.favourite-card .favourite-card-content .icon.active i {
+  color: red;
+}
+
+.favourite-card .fa-ellipsis-v {
+  padding: 15px 20px;
+  border-radius: 10px;
+
+  border: 1px solid rgb(65, 63, 63);
+}
+
+.categories-btn .green-btn {
   width: auto;
 }
 
-.green-tag{
+.green-tag {
   background-color: rgb(2, 61, 2);
   display: inline-block;
   font-size: 10px;
@@ -324,13 +314,25 @@ main {
   padding: 5px 15px;
 }
 
-.categories-btn .gray-btn{
+.categories-btn .gray-btn {
   padding: 10px 15px;
-    border-radius: 10px;
- 
-    border: 1px solid rgb(172, 164, 164);
-    color: white;
-    background-color: transparent;
+  border-radius: 10px;
+
+  border: 1px solid rgb(172, 164, 164);
+  color: white;
+  background-color: transparent;
+}
+.green-btn:hover {
+  background-color: rgb(4, 139, 65);
+  color: white;
+}
+
+.watchlist .favourite-card {
+  margin-bottom: 20px;
+}
+
+.gray-btn:hover {
+  background-color: black;
 }
 
 /* responsive style */
@@ -394,27 +396,23 @@ main {
     height: 400px;
   }
 
-  .favourite-section, .trending {
+  .favourite-section,
+  .trending {
     grid-template-columns: 32% 32% 32%;
     gap: 2%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  .favourite-section, .trending {
+  .favourite-section,
+  .trending {
     grid-template-columns: 23% 23% 23% 23%;
     gap: 2%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .watchlist{
+  .watchlist {
     display: block;
-  }  
-
+  }
 }
-
-
-
-
-
