@@ -137,6 +137,11 @@ main {
   border: 0;
 }
 
+.green-btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .gray-btn {
   padding: 10px;
   border-radius: 7px;
