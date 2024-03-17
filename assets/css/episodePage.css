@@ -87,3 +87,36 @@ body {
     bottom: 10px;
     right: 10px;
 }
+
+.info {
+    color: white;
+}
+
+.info .mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.info .topInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .rightInfo {
+    display: flex;
+    gap: 5px;
+}
+
+.info .downInfo {
+    display: flex;
+    gap:5px;
+}
+
+.downInfo p{
+    background-color:rgb(53, 53, 53);
+    border-radius: 20px;
+    padding: 7px;
+    margin-top: 10px;
+}
