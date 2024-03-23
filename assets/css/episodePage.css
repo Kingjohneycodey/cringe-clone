@@ -50,13 +50,13 @@ body {
 
 
 .container {
-    padding: 8px 8%;
+    padding: 8px 6%;
 }
 
 .main {
-    margin-top: 20px;
-    width: 100%;
-    padding: 0 20px;
+    /* margin-top: 20px; */
+    /* width: 100%;
+    padding: 0 20px; */
 }
 
 /* .topIcons {
@@ -85,7 +85,7 @@ body {
     background-color: rgba(77, 254, 77, 0.7);
     text-decoration: none;
     bottom: 10px;
-    right: 10px;
+    right: 6%;
 }
 
 .info {
@@ -104,9 +104,15 @@ body {
     justify-content: space-between;
 }
 
+.info .topInfo h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .info .rightInfo {
     display: flex;
     gap: 5px;
+    align-items: center;
 }
 
 .info .downInfo {
@@ -119,4 +125,27 @@ body {
     border-radius: 20px;
     padding: 7px;
     margin-top: 10px;
+}
+
+.mainSummaryBody p {
+    margin-top: 5px;
+}
+
+.Play {
+    border-radius: 6px;
+    background: #12f97f;
+    color: black;
+    padding: 10px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        padding: 8px 4%;
+    }
 }
